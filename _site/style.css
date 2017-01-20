@@ -1,0 +1,26 @@
+*{
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin:0;
+  padding:0;
+}
+
+html {
+  background-image: url('/images/brickwall.png');
+}
+
+body {
+  max-width: 700px;
+  margin: 50px auto;
+  background-color: lightgray;
+  padding: 50px;
+  font: 18px/1.5 "Alice", serif;
+}
+
+#banner {
+  text-align: center;
+}
