@@ -12,15 +12,15 @@ html, body {
 }
 
 html {
-  background-image: url('/images/brickwall.png');
+  background-image: url('/images/IMG_6173_copy1.jpg');
 }
 
 body {
   max-width: 700px;
   margin: 50px auto;
-  background-color: lightgray;
+  background-color: ivory;
   padding: 50px;
-  font: 18px/1.5 "Alice", serif;
+  font: 18px/1.5 "Alicemark", serif;
 }
 
 #banner {
