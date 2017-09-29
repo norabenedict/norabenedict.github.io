@@ -12,17 +12,146 @@ html, body {
 }
 
 html {
-  background-image: url('/images/IMG_6173_copy1.jpg');
+  background-image: url('/images/books2.jpg');
+  background-size: cover;
+  background-position: center;
+  opacity: .9;
 }
 
 body {
   max-width: 700px;
   margin: 50px auto;
   background-color: ivory;
-  padding: 50px;
+  padding: 40px;
   font: 18px/1.5 "Alicemark", serif;
 }
 
 #banner {
   text-align: center;
+}
+
+.navbar {
+  position: relative;
+  padding: 0.5rem 1rem;
+  float: center;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar li {
+  display: inline-block;
+  margin-left: 65px;
+  padding-top: 40px;
+
+  position: relative;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Alicemark", serif;
+  font-size: 20px;
+  font-weight: 400;
+  float: right;
+  padding-bottom: 15px;
+}
+
+.navbar a:hover {
+  color: #000;
+}
+
+.navbar a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a.active::before {
+  width: 100%;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 30px;
+  padding-top: 10px;
+
+  position: relative;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Alicemark", serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+nav a.active::before {
+  width: 100%;
+}
+
+.image {
+  width: 300px;
+}
+
+nav ul li:hover ul{
+  display: block;
+}
+
+nav ul ul{
+  display: none;
+  position: absolute;
+  background-color: #000;
+}
+
+header {
+  background: #778899;
 }

@@ -1,7 +1,25 @@
 ---
 layout: default
 title: Home
+order: 1
 ---
+<div id="about"></div>
+
+<header class="navbar">
+        <ul>
+          {% assign navigation_pages = site.html_pages | sort: "order" %}
+          {% for p in navigation_pages %}
+          {% if p.order %}
+            <li>
+              <a href="{{ p.url | prepend: site.baseurl }}" {% if p.url == page.url %}class="active"{% endif %}>
+                {{ p.title }}
+              </a>
+            </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </header>
+  </body>
 
 <p> Nora’s research focuses on twentieth-century Latin American literature, descriptive bibliography, book history, and questions of access and maintenance surrounding both digital and print cultures. Before coming to Princeton, she was a Digital Humanities Fellow in the Scholars’ Lab at the University of Virginia, where she developed a mapping and data visualization project that traces the role of publishers and printers in Jorge Luis Borges’s Argentina (1930-1951).</p>
 

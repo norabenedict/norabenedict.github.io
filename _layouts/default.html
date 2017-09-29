@@ -6,14 +6,24 @@
 <link rel="stylesheet" href="{{ site.baseurl }}/style.css">
 
 <header role="banner" id="banner">
-  <nav>
-    <a href="{{ site.baseurl }}/">Home</a>
-    <a href="{{ site.baseurl }}/cv/">CV</a>
-    <a href="{{ site.baseurl }}/contact/">Contact</a>
-    <a href="{{ site.baseurl }}/projects/">Projects</a>
-  </nav>
-
+    {% if page.title != 'Home' %}
+    <nav>
+      <ul>
+        {% assign navigation_pages = site.html_pages | sort: "order" %}
+        {% for p in navigation_pages %}
+        {% if p.order %}
+          <li>
+            <a href="{{ p.url | prepend: site.baseurl }}" {% if p.url == page.url %}class="active"{% endif %}>
+              {{ p.title }}
+            </a>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </nav>
+    {% endif %}
 </header>
+
 <main role="main" id="main">
 {{ content }}
 </main>
