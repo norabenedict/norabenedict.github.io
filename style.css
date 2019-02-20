@@ -105,14 +105,13 @@ nav.black ul li a {
 .ncb {
   float: left;
   height: 30%;
-  width: 40%;
+  width: 45%;
   padding: 2px;
-  margin-left: 5vh;
+  margin-right: 5vh;
   border: solid 1px;
       }
 
 .content p {
-  width: 900px;
   margin-left: 5vh;
   margin-right: 10vh;
   text-align: right;
