@@ -103,7 +103,7 @@ nav.black ul li a {
 }
 
 .ncb {
-  float: right;
+  float: left;
   height: 30%;
   width: 40%;
   padding: 2px;
@@ -113,10 +113,10 @@ nav.black ul li a {
 
 .content p {
   width: 900px;
-  margin-left: 50px;
-  margin-right: 5vh;
-  text-align: left;
-  font-size: 18px;
+  margin-left: 5vh;
+  margin-right: 10vh;
+  text-align: right;
+  font-size: 22px;
   line-height: 22px;
 }
 
