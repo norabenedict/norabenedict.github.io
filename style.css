@@ -181,7 +181,6 @@ p.bio {
 }
 
 .site-footer {
-  text-align: center;
   height: 105px;
   border-top: 1px solid black;
     border-top-width: 1px;
@@ -196,7 +195,7 @@ p.bio {
 }
 
 footer {
-  position: relative;
+  position: fixed;
 }
 
 .site-footer img {
