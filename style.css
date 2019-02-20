@@ -195,7 +195,7 @@ p.bio {
 }
 
 footer {
-  position: fixed;
+  position: relative;
 }
 
 .site-footer img {
@@ -246,7 +246,7 @@ p.display {
 }
 
 footer {
-  position: fixed;
+  position: relative;
 }
 
 .site-footer img {
