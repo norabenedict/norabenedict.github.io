@@ -196,6 +196,7 @@ p.bio {
 
 footer {
   position: relative;
+  float: right;
 }
 
 .site-footer img {
@@ -247,6 +248,7 @@ p.display {
 
 footer {
   position: relative;
+  float: right;
 }
 
 .site-footer img {
