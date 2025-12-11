@@ -196,7 +196,7 @@ p.bio {
 
 footer {
   position: relative;
-  float: right;
+  text-align: center;
   margin-right: 5vh;
 }
 
